@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= communityUser.username %>'s Pantry Inventory</title>
+</head>
+<body>
+  <%- include('../partials/_navbar.ejs') %>
+  <h1><%= communityUser.username %>'s Pantry Inventory</h1>
+  <ul>
+    <% communityUserPantry.forEach(item => { %>
+      <li><%= item.name %></li>
+    <% }) %>
+  </ul>
+  </form>
+
+</body>
+</html>

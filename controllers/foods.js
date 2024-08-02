@@ -18,6 +18,7 @@ router.get('/new', (req,res) => {
   res.render('foods/new.ejs')
 })
 
+
 router.get('/:itemId', async (req, res) => {
   try {
   const currentUser = await User.findById(req.session.user._id)
